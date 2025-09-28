@@ -1,0 +1,40 @@
+    *{
+        margin: 0px;
+        padding: 0px;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+    body{
+        background-color: rgb(166, 178, 179);
+    }
+
+    .main{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        justify-content: center;
+        padding: 50px;
+        background-color: white;
+        margin: 80px;
+        border-radius: 20px;
+        height: 200px;
+    }
+
+    #lemail,#lpassword{
+        padding-left: 5px;
+        padding: 5px 5px;
+        margin-bottom: 10px;
+
+
+    }
+
+    #lemail:active{
+       border-color: red;
+    }
+
+    .button1{
+        background-color: rgb(48, 138, 174);
+        border: none;
+        border-radius: 10px;
+        padding: 6px 15px;
+        color: white;
+        font-size: 12px;
+    }
