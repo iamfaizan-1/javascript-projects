@@ -1,0 +1,47 @@
+
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+body{
+    background-color: gray;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: baseline;
+}
+
+.first-div{
+    display: flex;
+    align-items: center;
+    background-color: white;
+    height: 70vh;
+    width: 70vmin;
+    padding: 20px;
+    flex-direction: column;
+}
+
+.boxes{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    height: 100%;
+    flex-wrap: wrap;
+    gap: 3px;
+}
+
+.box{
+    width: 32%;
+    height: 32%;
+
+}
+
+
+
+.button{
+    height: 20px;
+    width: 100px;
+    text-align: center;
+    
+}
