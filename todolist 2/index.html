@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="./bootstrap-5.3.6-dist/css/bootstrap.min.css">
+</head>
+<body>
+    
+    
+  <div class="container mt-5 col-6">
+
+      <div class="input-group mb-3   ">
+  <input type="text" id="input-1" class="form-control" placeholder="Enter a task" aria-label="Recipient's username" aria-describedby="button-addon2">
+  <button id = "add_btn" class="btn btn-outline-secondary"  type="button" id="button-addon2 ">Add</button>
+</div>
+
+<div>
+    <ul class="list-group" id="unorder" >
+  <li class="list-group-item d-flex justify-content-between">
+
+<h4>Task name</h4>
+<button class="btn btn-warning ms-auto me-2" onclick = "editElement(this)" >Edit</button>
+<button class="btn btn-danger" onclick="removeElement(this)">Remove</button>
+
+  </li>
+  
+</ul>
+</div>
+  </div>
+
+
+<script src="./bootstrap-5.3.6-dist/js/bootstrap.min.js" >
+
+</script>
+    <script src="./app.js" ></script>
+</body>
+</html>
