@@ -30,7 +30,7 @@ input.value = "";
 newLi.className = "list-group-item d-flex justify-content-between";
 
 newLi.innerHTML = `<h4>${currentInput}</h4>
-<button class="btn btn-warning ms-auto me-2" onclick = "editElement()"  >Edit</button>
+<button class="btn btn-warning ms-auto me-2" onclick = "editElement(this)"  >Edit</button>
 <button class="btn btn-danger" onclick = "removeElement(this)" >Remove</button>`;
 
 // let parentList = document.querySelector("#unorder")
@@ -59,7 +59,37 @@ function removeElement(currentElement){
 }
 
 function editElement(currentElement){
+if(currentElement.textContent === "Done"){
+   currentElement.textContent = "Edit";
 
-   console.log(currentElement.previousElementSibling)
+   let currentChapter = currentElement.previousElementSibling.value
+   let currentHeading = document.createElement("h3")
+   currentHeading.textContent = currentChapter;
+   
+   currentElement.parentElement.replaceChild(currentHeading, currentElement.previousElementSibling)
+
+}
+else{
+
+
+
+   currentElement.textContent = "Done"
+  let currentChapter = currentElement.previousElementSibling.textContent;
+// console.log(currentElement.previousElementSibling.textContent)
+let currentInput = document.createElement("input");
+
+   currentInput.type = "text"
+   
+   currentInput.className = "form-control"
+
+   currentInput.value  = currentChapter;
+   // console.log(currentInput.value)
+
+   currentElement.parentElement.replaceChild(currentInput , currentElement.previousElementSibling)
+
+
+}
+
+
 
 }
